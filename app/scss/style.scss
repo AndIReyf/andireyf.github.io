@@ -196,6 +196,9 @@
     min-height: 70px;
   }
   &-author{
+    display: flex;
+    align-items: center;
+    max-width: 245px;
     .avatar{
       width: 30px;
       height: 30px;
@@ -211,8 +214,13 @@
      font-size: 14px; 
      font-weight: 500;
     }
-    display: flex;
-    align-items: center;
+  }
+  &-rank{
+    font-size: 15px;
+    span{
+      color: $bg;
+      font-weight: 700;
+    }
   }
 }
 
@@ -230,6 +238,36 @@
       background-color: $red;
       outline: none;
       color: #fff;
+    }
+  }
+}
+
+
+// Slider Product
+
+.product-slider{
+  padding: 110px 0px 120px;
+  .slick-dots{
+    text-align: center;
+    margin-top: 50px;
+    li{
+      display: inline-block;
+      margin: 0px 4px;
+      &.slick-active{
+        button{
+          background-color: $green;
+        }
+      }
+      button{
+        border-radius: 50%;
+        background-color: rgb(232, 232, 232);
+        border: none;
+        font-size: 0;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        outline: none;
+      }
     }
   }
 }
