@@ -3,7 +3,6 @@
 @import 'fonts';
 
 
-
 .header__top-inner{
   display: flex;
   justify-content: space-between;
@@ -60,6 +59,9 @@
   }
 }
 
+
+//  Search Start
+
 .search{
   background-repeat: no-repeat;
   background-size: cover;
@@ -111,3 +113,124 @@
     }
   }
 }
+
+
+// Products Start
+
+.products{
+  background-color: $grey;
+  padding: 110px 0px;
+}
+
+.product__inner-btn{
+  text-align: center;
+  margin-bottom: 60px;
+  button{
+    padding: 12px 21px;
+    border: none;
+    background-color: #fff;
+    color: $bg;
+    cursor: pointer;
+    & + button{
+      margin-left: 5px;
+    }
+    &.mixitup-control-active{
+      background-color: $red;
+      outline: none;
+      color: #fff;
+    }
+  }
+}
+
+.product__inner-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product__item{
+  margin-bottom: 30px;
+  max-width: 442px;
+  width: 100%;
+  box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+  &-img{
+    min-height: 250px;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+    background-size: cover;
+ }
+  &-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    min-height: 90px;
+    font-weight: 500;
+    border-bottom: 1px solid #e7ecf2;
+  }
+  &-name{
+    max-width: 310px;
+  }
+  &-title{
+    font-weight: 700;
+    color: $bg;
+    font-size: 18px;
+    display: block;
+  }
+  &-category{
+    font-size: 14px;
+    color: $green;
+    display: block;
+  } 
+  &-price{
+    font-size: 20px;
+    color: $bg;
+    font-weight: 700;
+  }
+  &-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    min-height: 70px;
+  }
+  &-author{
+    .avatar{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-position: center;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 14px;
+      
+    }
+    span{
+     font-size: 14px; 
+     font-weight: 500;
+    }
+    display: flex;
+    align-items: center;
+  }
+}
+
+.products__bottom-btn{
+  text-align: center;
+  button{
+    margin-top: 45px 5px 0px;
+    box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+    background-color: #fff;
+    color: $bg;
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    &.mixitup-control-active {
+      background-color: $red;
+      outline: none;
+      color: #fff;
+    }
+  }
+}
+
