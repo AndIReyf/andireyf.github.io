@@ -328,3 +328,82 @@
     font-size: 15px;
   }
 }
+
+// Subscribers
+
+.subscribers{
+  margin-bottom: 70px;
+  min-height: 750px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribers__inner{
+  background-color: $green;
+  max-width: 650px;
+  width: 100%;
+  min-height: 215px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-info{
+    overflow: hidden;
+    color: #fff;
+    font-size: 30px;
+    line-height: 36px;
+    margin-right: 45px;
+    max-width: 270px;
+    span{
+      @include f700;
+    }
+  }
+  &-btn{
+    font-size: 18px;
+    line-height: 36px;
+    color: $bg;
+    button{
+      border: none;
+      background-color: #fff;
+      padding: 20px 40px;
+      cursor: pointer;
+    }
+  }
+}
+
+// Tutorials
+
+.tutorials{
+  margin-bottom: 120px;
+}
+
+.tutorials__inner{
+  display: flex;
+  justify-content: space-between;
+  &-box{
+    max-width: 370px;
+    width: 100%;
+  }
+  &-img {
+    min-height: 270px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &-text{
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px 10px;
+    a{
+      font-size: 24px;
+      line-height: 60px;
+      color: $bg;
+      @include f700;
+    }
+  }
+}
+
