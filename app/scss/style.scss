@@ -55,7 +55,6 @@
   }
   a{
     color: #fff;
-    font-size: 14px;
   }
 }
 
@@ -96,7 +95,6 @@
       border-radius: 4px;
       height: 56px;
       border: none;
-      font-size: 14px;
       @include f500;
       padding-left: 25px;
       padding-right: 60px;
@@ -179,7 +177,6 @@
     display: block;
   }
   &-category{
-    font-size: 14px;
     color: $green;
     display: block;
   } 
@@ -211,12 +208,10 @@
       
     }
     span{
-     font-size: 14px; 
      @include f500;
     }
   }
   &-rank{
-    font-size: 15px;
     span{
       color: $bg;
       @include f700;
@@ -324,9 +319,6 @@
     @include f500;
     font-size: 24px;
   }
-  &-text{
-    font-size: 15px;
-  }
 }
 
 // Subscribers
@@ -404,6 +396,161 @@
       color: $bg;
       @include f700;
     }
+  }
+}
+
+// Footer
+
+.footer{
+  background-color: $bg;
+  &__bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 36px;
+    color: #919699;
+    border-top: 1px solid #424d53;
+    min-height: 70px;
+  }
+}
+
+.footer__inner{
+  display: flex;
+  justify-content: space-between;
+  padding: 95px 0;
+  color: #fff;
+  &-box.info{
+    max-width: 270px;
+    margin-right: 70px;
+  }
+  &-box{
+    width: 100%;
+    .form{
+      position: relative;
+    }
+    input{
+      display: block;
+      background-color: #2f3c43;
+      height: 46px;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 50px;
+      border: none;
+      color: #fff;
+      &::placeholder{
+        color: #697378;
+        line-height: 36px;
+      }
+    }
+    button{
+      width: 43px;
+      height: 46px;
+      background-color: $green;
+      border: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+      &::after{
+        content: '\f124';
+        position: absolute;
+        font-family: 'icomoon';
+        font-size: 20px;
+        color: #fff;
+        right: 35%;
+        top: 25%;
+      }
+    }
+  }
+  &-title{
+    font-size: 22px;
+    font-family: $raleway;
+    padding-bottom: 30px;
+    margin-bottom: 32px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 2px;
+      width: 51px;
+      height: 3px;
+      background-color: $green;
+    }
+  }
+  &-text{
+    color: #b7c3c8;
+    margin-bottom: 30px;
+  }
+  &-info{
+    font-size: 14px;
+    font-family: $lato;
+    padding-left: 30px;
+    position: relative;
+    color: #fff;
+    &::before{
+      content: '\e900';
+      font-family: 'icomoon';
+      font-size: 18px;
+      color: $green;
+      position: absolute;
+      left: 0;
+    }
+    &.phone{
+    margin-top: 15px;
+    position: relative;
+    &::before{
+      content: '\f095';
+    }
+  }
+  }
+  &-link{
+    a{
+      padding-left: 20px;
+      color: #b7c3c8;
+      line-height: 36px;
+      position: relative;
+      &::before{
+        content: '\f054';
+        font-family: 'icomoon';
+        font-size: 13px;
+        color: $green;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  &-links.social{
+    margin-bottom: 30px;
+    li{
+      display: inline-block;
+      & + li{
+      padding-left: 5px;
+    }
+    }
+    a{
+      width: 28px;
+      height: 28px;
+      background-image: url(../images/footer/css_sprites.png);   
+    }
+    .link-twitter{
+      background-position: -0 -28px;
+    }
+    .link-youtube{
+      background-position: -56px -0;
+    }
+    .link-pinterest{
+      background-position: -28px -28px;
+    }
+    .link-linkedin{
+      background-position: -28px -0;
+    }
+  }
+  &-mail{
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 15px;
   }
 }
 
