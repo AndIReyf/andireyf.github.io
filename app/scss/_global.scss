@@ -32,6 +32,7 @@ body {
   line-height: 24px;
   color: $text;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -66,7 +67,7 @@ body {
   }
 }
 
-.page-content{
+.page-content {
   background-color: $grey;
 }
 
@@ -84,16 +85,19 @@ body {
   margin-right: 8px;
 }
 
-.breadcrumbs{
-  &__inner{
+.breadcrumbs {
+  &__inner {
     padding: 45px 0 40px;
   }
-  &__list{
-    li{
+
+  &__list {
+    li {
       display: inline-block;
       position: relative;
-      & + li{
+
+      &+li {
         padding-left: 24px;
+
         &::after {
           content: '-';
           position: absolute;
@@ -101,23 +105,27 @@ body {
           color: $green;
         }
       }
-      &:last-child{
+
+      &:last-child {
+
         a,
-        span{
+        span {
           color: $bg;
         }
       }
     }
-    a{
+
+    a {
       color: #b0bec5;
     }
   }
 }
 
-.angle-right{
+.angle-right {
   position: relative;
   padding-left: 15px;
-  &::before{
+
+  &::before {
     content: '\f105';
     position: absolute;
     font-family: 'icomoon';
