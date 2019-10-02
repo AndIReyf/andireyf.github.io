@@ -1843,4 +1843,89 @@ label{
   }
 }
 
+// Erorre 404
+
+.page-404__wrapper,
+.about__wrapper {
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  margin-bottom: 150px;
+}
+
+.page-404__head,
+.about__head {
+  font-size: 24px;
+  color: #444;
+  @include f500;
+  padding: 23px 27px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.page-404__inner{
+  text-align: center;
+  background-color: $green;
+  color: #fff;
+}
+
+.page-404__404{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 300px;
+  font-weight: 800;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  line-height: 300px;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    background-image: url(../images/404/page-404.png);
+    width: 150px;
+    height: 292px;
+    margin-left: 20px;
+  }
+}
+
+.page-404__title{
+  margin-bottom: 30px;
+  @include f300;
+  font-size: 30px;
+}
+
+.page-404__text{
+  font-size: 18px;
+  max-width: 530px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.page-404__link{
+  font-size: 14px;
+  color: #fff;
+  line-height: 24px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 15px 45px 15px 30px;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+}
+
+// About US
+
+.about__inner{
+  padding: 0 50px;
+  .about__box{
+    h3{
+      font-size: 20px;
+      @include f700;
+      color: #444;
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+    p{
+      margin-bottom: 40px;
+    }
+  }
+}
+
+
 @import 'media';
