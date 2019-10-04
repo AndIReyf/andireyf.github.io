@@ -6,6 +6,7 @@ $(function () {
   else {
   }
 
+  // Rank-style Stars
   $('.rate-star').rateYo({
     rating: 5,
     fullStar: true,
@@ -48,6 +49,8 @@ $(function () {
     $('.header__box').toggleClass('active');
   });
 
+  // Form-styler
+  $('input[type="file"], select').styler();
   
   // TABS
   $('.product-one__tabs .tab, .settings__tabs .tab').on('click', function (event) {

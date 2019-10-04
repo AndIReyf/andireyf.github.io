@@ -265,11 +265,75 @@
           <div class="breadcrumbs__inner">
             <ul class="breadcrumbs__list">
               <li><a href="#">Home</a></li>
-              <li><span></span></li>
+              <li><span>Upload Product</span></li>
             </ul>
           </div>
         </div>
       </div>
+
+      <section class="upload">
+        <div class="container">
+          <form>
+            <div class="upload__inner">
+              <div class="upload__inner-title">
+                Upload Your item
+              </div>
+              <div class="upload__inner-content">
+                <div class="upload__line">
+                  <label>Select Categories <span>*</span></label>
+                  <select>
+                    <option>Select</option>
+                  </select>
+                </div>
+                <div class="upload__line">
+                  <label>Product Name <span>*</span></label>
+                  <input type="text" placeholder="Enter your product name here ..." required>
+                </div>
+                <div class="upload__line">
+                  <label>Product Description <span>*</span></label>
+                  <textarea placeholder="Type your text  here" required></textarea>
+                </div>
+                <div class="upload__line">
+                  <label>Upload Main File <span>*</span></label>
+                  <input type="file" placeholder="No File Choosen" data-placeholder="No File Choosen" data-browse="Choose File" required>
+                </div>
+                <div class="upload__line">
+                  <label>Upload Screenshots <span>*</span></label>
+                  <input type="file" placeholder="No File Choosen" data-placeholder="No File Choosen" data-browse="Choose File" required>
+                </div>
+                <div class="upload__line">
+                  <label>File Included <span>*</span></label>
+                  <select>
+                    <option>Select File Type </option>
+                  </select>
+                </div>
+                <div class="upload__line">
+                  <label>File Dimensions <span>*</span></label>
+                  <input type="text" placeholder="Enter the item  dimentionss here ..." required>
+                </div>
+                <div class="upload__line">
+                  <label>Item Tags <span>*</span></label>
+                  <input type="text" placeholder="Enter Tag Here" required>
+                </div>
+              </div>
+              <div class="upload__inner-title">
+                Set Your Price (US$)
+              </div>
+              <div class="upload__inner-content">
+                <div class="upload__line">
+                  <label>Regular License <span>*</span></label>
+                  <input type="text" placeholder="$00.00" required>
+                </div>
+                <div class="upload__line">
+                  <label>Extended License <span>*</span></label>
+                  <input type="text" placeholder="$00.00" required>
+                </div>
+                <button type="submit">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
 
     </div>
     <!-- Footer -->
