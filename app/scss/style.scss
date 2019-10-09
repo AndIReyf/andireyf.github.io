@@ -601,6 +601,30 @@ label{
     display: block;
     background-position: center;
     background-size: cover;
+    position: relative;
+    overflow: hidden;
+    
+    &::before{
+      text-align: center;
+      font-size: 18px;
+      top: 11px;
+      left: 14px;
+      z-index: 5;
+      position: absolute;
+      color: #fff;
+    }
+  }
+
+  .img-status{
+    position: absolute;
+    width: 64px;
+    height: 79px;
+    left: -26px;
+    top: -33px;
+    background-color: $green;
+    transform: rotate(45deg);
+
+    
   }
 
   &-content {
