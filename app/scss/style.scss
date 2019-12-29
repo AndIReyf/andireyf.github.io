@@ -360,7 +360,7 @@
 
 // MODAL popup
 
-#modal{
+#modal {
   background-color: $green;
   max-width: 730px;
   width: 100%;
@@ -368,7 +368,7 @@
   padding-top: 90px;
 }
 
-.login__title{
+.login__title {
   text-align: center;
   color: #fff;
   margin-bottom: 40px;
@@ -377,13 +377,13 @@
   @include f700;
 }
 
-.login__wrapper{
-  form{
+.login__wrapper {
+  form {
     max-width: 400px;
     margin: 0 auto;
   }
 
-  input{
+  input {
     width: 100%;
     height: 43px;
     margin-bottom: 8px;
@@ -393,13 +393,14 @@
     padding: 0 40px;
     color: #fff;
     font-size: 14px;
-    &::placeholder{
+
+    &::placeholder {
       color: #fff;
       font-size: 14px;
     }
   }
 
-  button{
+  button {
     margin-top: 15px;
     margin-right: 5px;
     padding: 18px 16px;
@@ -415,7 +416,7 @@
     box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
   }
 
-  .creat-acc{
+  .creat-acc {
     color: #fff;
     font-size: 18px;
     padding: 14px 0px 15px 35px;
@@ -423,7 +424,8 @@
     background-color: #76ae36;
     text-align: center;
     position: relative;
-    &::before{
+
+    &::before {
       content: '\f044';
       position: absolute;
       color: #fff;
@@ -433,7 +435,7 @@
     }
   }
 
-  .lost-pass{
+  .lost-pass {
     display: block;
     margin-top: 20px;
     color: #fff;
@@ -441,10 +443,10 @@
   }
 }
 
-label{
+label {
   position: relative;
 
-  &::before{
+  &::before {
     position: absolute;
     font-family: 'icomoon';
     color: #fff;
@@ -454,31 +456,25 @@ label{
   }
 }
 
-.login__label-name::before{
+.login__label-name::before {
   content: '\f007';
 }
 
-.login__label-pass::before{
+.login__label-pass::before {
   content: '\f023';
 }
 
-.fancybox-button svg path{
+.fancybox-button svg path {
   color: #fff;
 }
 
 //---------------------------------------------------------  Search Start
 
 .search {
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 19vh);
-
-  &__bg{
-    flex: 1 0 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
 
   &.new-products {
     min-height: 230px;
@@ -546,12 +542,12 @@ label{
 }
 
 
-// Products Start
+// ------------------------------------------------------Products Start
 
 .products {
   background-color: $grey;
   padding: 110px 0px;
-  
+
 }
 
 .products__wrapper,
@@ -590,7 +586,7 @@ label{
   margin-left: -30px;
 }
 
-.products .product__item{
+.products .product__item {
   flex-basis: calc(25% - 30px);
   margin-left: 30px;
 }
@@ -601,7 +597,7 @@ label{
   width: 100%;
   box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
 
-  &:hover{
+  &:hover {
     box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
   }
 
@@ -613,8 +609,8 @@ label{
     background-size: cover;
     position: relative;
     overflow: hidden;
-    
-    &::before{
+
+    &::before {
       text-align: center;
       font-size: 18px;
       top: 11px;
@@ -625,7 +621,7 @@ label{
     }
   }
 
-  .img-status{
+  .img-status {
     position: absolute;
     width: 64px;
     height: 79px;
@@ -633,8 +629,6 @@ label{
     top: -33px;
     background-color: $green;
     transform: rotate(45deg);
-
-    
   }
 
   &-content {
@@ -692,7 +686,6 @@ label{
       background-repeat: no-repeat;
       background-size: cover;
       margin-right: 14px;
-
     }
 
     span {
@@ -729,7 +722,7 @@ label{
 }
 
 
-// Slider Product
+// -------------------------------------------------------------Slider Product
 
 .product-slider {
   padding: 110px 0px 120px;
@@ -763,7 +756,7 @@ label{
 }
 
 
-// Advantages
+// ----------------------------------------------------------------Advantages
 
 .advantages {
   background-color: $bg;
@@ -821,7 +814,7 @@ label{
   }
 }
 
-// Subscribers
+// --------------------------------------------------------Subscribers
 
 .subscribers {
   margin-bottom: 70px;
@@ -870,7 +863,7 @@ label{
   }
 }
 
-// Tutorials
+// ---------------------------------------------------------------Tutorials
 
 .tutorials {
   margin-bottom: 120px;
@@ -907,7 +900,7 @@ label{
   }
 }
 
-// Footer
+// -------------------------------------------------------------------Footer
 
 .footer {
   background-color: $bg;
@@ -1098,7 +1091,7 @@ label{
 }
 
 
-// Products Page
+// -----------------------------------------------------------Products Page
 
 .product-page__inner {
   display: flex;
@@ -1681,47 +1674,50 @@ label{
   color: $bg;
 }
 
-.productmini__thema{
+.productmini__thema {
   color: $green;
   font-size: 12px;
 }
 
-.productmini__price{
+.productmini__price {
   font-size: 18px;
   @include f700;
   color: $bg;
 }
 
-.product-one__tabs{
+.product-one__tabs {
   margin-bottom: 50px;
 }
 
-.product-one__more{
+.product-one__more {
   margin-top: 50px;
 }
 
-.tabs{
+.tabs {
   display: flex;
   text-align: center;
   border: 1px solid #d7d7d7;
-  .tab{
+
+  .tab {
     width: 100%;
     background-color: #fff;
     font-size: 16px;
     color: #70838d;
     padding: 20px 0;
     cursor: pointer;
-    &+.tab{
+
+    &+.tab {
       border-left: 1px solid #d7d7d7;
     }
   }
-  .active{
+
+  .active {
     border-bottom: 3px solid $green;
     color: $bg;
   }
 }
 
-.tab_content{
+.tab_content {
   border-right: 1px solid #d7d7d7;
   border-left: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7;
@@ -1729,14 +1725,15 @@ label{
   padding: 30px 30px 50px;
 }
 
-.tab-item{
+.tab-item {
   display: none;
-  &:first-child{
+
+  &:first-child {
     display: block;
   }
 }
 
-.tab-items__list{
+.tab-items__list {
   font-size: 16px;
   line-height: 36px;
   color: #707070;
@@ -1746,20 +1743,20 @@ label{
 
 // Product-one ASIDE
 
-.price__box{
+.price__box {
   display: flex;
   justify-content: space-between;
   padding: 30px 0;
 }
 
-.price__product{
+.price__product {
   font-size: 22px;
   @include f500;
   color: $red;
 }
 
-.product__price{
-  button{
+.product__price {
+  button {
     box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
     margin-bottom: 7px;
     border: none;
@@ -1773,7 +1770,8 @@ label{
     padding: 17px 5px 15px;
     width: 100%;
     cursor: pointer;
-    &::before{
+
+    &::before {
       font-weight: 400;
       font-family: 'icomoon';
       padding-right: 8px;
@@ -1784,91 +1782,98 @@ label{
     background-color: $green;
   }
 
-  .icon-heart-o{
+  .icon-heart-o {
     background-color: #42a5f5;
   }
 
 }
 
-.product-author__box{
+.product-author__box {
   display: flex;
   padding: 25px 0;
 }
 
-.author__avatar{
+.author__avatar {
   margin-right: 14px;
 }
 
-.author__name{
+.author__name {
   font-size: 18px;
   color: $bg;
   margin-bottom: 2px;
 }
 
-.author__info-link{
+.author__info-link {
   font-size: 13px;
   color: #707070;
   border: 1px solid #d5d5d5;
   padding: 5px 10px 6px;
 }
 
-.author__awards-list{
-  li{
+.author__awards-list {
+  li {
     display: inline-block;
     color: #fff;
     font-size: 20px;
     text-align: center;
     position: relative;
-    &::before{
+
+    &::before {
       position: absolute;
       top: 6px;
       right: 0;
       left: 0;
     }
-    &+li{
+
+    &+li {
       margin-left: 4px;
     }
   }
 
-  .icon-meh-o{
+  .icon-meh-o {
     background-image: url(../images/award-icons/awards-1.png);
     width: 34px;
-    height: 37px;    
+    height: 37px;
   }
-  .icon-pagelines{
+
+  .icon-pagelines {
     background-image: url(../images/award-icons/awards-2.png);
     width: 34px;
     height: 37px;
   }
-  .icon-flash{
+
+  .icon-flash {
     background-image: url(../images/award-icons/awards-3.png);
     width: 34px;
     height: 37px;
   }
-  .icon-foursquare{
+
+  .icon-foursquare {
     background-image: url(../images/award-icons/awards-4.png);
     width: 34px;
     height: 37px;
   }
-  .icon-yen{
+
+  .icon-yen {
     background-image: url(../images/award-icons/awards-5.png);
     width: 34px;
     height: 37px;
   }
 }
 
-.aside__item-sales{
+.aside__item-sales {
   padding-top: 23px;
   font-size: 16px;
   @include f300;
   color: #707070;
 
-  span{
+  span {
     font-size: 20px;
     @include f700;
     color: $bg;
     padding-right: 13px;
-    &::before{
+
+    &::before {
       content: '\f07a';
       font-family: 'icomoon';
       color: #a6b5bb;
@@ -1882,13 +1887,13 @@ label{
   padding-bottom: 22px;
 }
 
-.information__line{
+.information__line {
   font-size: 14px;
   color: #70838d;
   margin-top: 20px;
   line-height: 18px;
-  
-  span{
+
+  span {
     color: $bg;
     @include f500;
   }
@@ -1914,13 +1919,13 @@ label{
   border-bottom: 1px solid #dcdcdc;
 }
 
-.page-404__inner{
+.page-404__inner {
   text-align: center;
   background-color: $green;
   color: #fff;
 }
 
-.page-404__404{
+.page-404__404 {
   font-family: 'Open Sans', sans-serif;
   font-size: 300px;
   font-weight: 800;
@@ -1928,7 +1933,8 @@ label{
   padding-bottom: 30px;
   line-height: 300px;
   position: relative;
-  &::after{
+
+  &::after {
     content: '';
     position: absolute;
     background-image: url(../images/404/page-404.png);
@@ -1938,20 +1944,20 @@ label{
   }
 }
 
-.page-404__title{
+.page-404__title {
   margin-bottom: 30px;
   @include f300;
   font-size: 30px;
 }
 
-.page-404__text{
+.page-404__text {
   font-size: 18px;
   max-width: 530px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
 
-.page-404__link{
+.page-404__link {
   font-size: 14px;
   color: #fff;
   line-height: 24px;
@@ -1964,17 +1970,19 @@ label{
 
 // About US
 
-.about__inner{
+.about__inner {
   padding: 0 50px;
-  .about__box{
-    h3{
+
+  .about__box {
+    h3 {
       font-size: 20px;
       @include f700;
       color: #444;
       margin-top: 40px;
       margin-bottom: 15px;
     }
-    p{
+
+    p {
       margin-bottom: 40px;
     }
   }
@@ -1982,39 +1990,39 @@ label{
 
 // Contact US
 
-.contacts__head{
+.contacts__head {
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.contacts__inner{
+.contacts__inner {
   padding: 35px 40px 15px;
 }
 
-.contacts__map{
+.contacts__map {
   margin-bottom: 50px;
-  
-  iframe{
+
+  iframe {
     width: 100%;
     height: 415px;
   }
 }
 
-.contacts__box{
+.contacts__box {
   display: flex;
 }
 
-.contacts__info{
+.contacts__info {
   margin-right: 75px;
   max-width: 282px;
   width: 100%;
 }
 
-.contacts__info-item{
+.contacts__info-item {
   margin-bottom: 30px;
 }
 
-.contacts__info-title{
+.contacts__info-title {
   padding-bottom: 20px;
   position: relative;
   font-size: 20px;
@@ -2022,14 +2030,16 @@ label{
   color: $bg;
   padding-left: 40px;
   margin-bottom: 17px;
-  &::before{
+
+  &::before {
     color: $green;
     font-size: 24px;
     position: absolute;
     font-family: 'icomoon';
     left: 0;
   }
-  &::after{
+
+  &::after {
     content: '';
     position: absolute;
     width: 44px;
@@ -2040,27 +2050,27 @@ label{
   }
 }
 
-.contacts__info-content{
+.contacts__info-content {
   padding-left: 40px;
   color: #707070;
 }
 
-.contacts__form-title{
+.contacts__form-title {
   font-size: 24px;
   margin-bottom: 16px;
   @include f500;
   color: #333;
 }
 
-.contacts__form-row{
+.contacts__form-row {
   display: flex;
   justify-content: space-between;
 }
 
-.contacts__form{
+.contacts__form {
   width: 100%;
 
-  input{
+  input {
     border: none;
     height: 43px;
     padding: 0 17px;
@@ -2068,12 +2078,13 @@ label{
     width: 350px;
     margin-bottom: 30px;
 
-    &::placeholder{
+    &::placeholder {
       color: #7a7a7a;
       font-size: 15px;
     }
   }
-  textarea{
+
+  textarea {
     border: none;
     padding: 13px 17px;
     background-color: #f1f4f5;
@@ -2088,7 +2099,8 @@ label{
       font-size: 15px;
     }
   }
-  button{
+
+  button {
     border: none;
     font-size: 16px;
     color: #fff;
@@ -2104,14 +2116,14 @@ label{
 
 // Settings
 
-.settings{
+.settings {
   padding-bottom: 100px;
 }
 
-.product-one__tabs.settings__tabs{
+.product-one__tabs.settings__tabs {
   display: flex;
 
-  .tabs{
+  .tabs {
     max-width: 270px;
     width: 100%;
     height: 100%;
@@ -2121,7 +2133,7 @@ label{
     display: block;
     text-align-last: left;
 
-    span{
+    span {
       display: block;
       background-color: #fff;
       border-bottom: 1px solid #dedede;
@@ -2130,27 +2142,27 @@ label{
       font-size: 14px;
       @include f500;
 
-      &.active{
+      &.active {
         border-bottom: 3px solid $green;
         color: #37474f;
 
-        &::before{
+        &::before {
           color: $green;
         }
       }
 
-      &::before{
+      &::before {
         left: 24px;
         color: #444;
       }
     }
   }
 
-  .tabs .tab+.tab{
-    border-left:  none;
+  .tabs .tab+.tab {
+    border-left: none;
   }
 
-  .tab_content{
+  .tab_content {
     width: 100%;
     border: none;
     padding: 0;
@@ -2158,12 +2170,12 @@ label{
   }
 }
 
-.page-box{
+.page-box {
   border: 1px solid #dedede;
   background-color: #fff;
   min-height: 100%;
 
-  &__title{
+  &__title {
     border-bottom: 1px solid #dedede;
     padding: 18px 34px;
     font-size: 24px;
@@ -2171,22 +2183,22 @@ label{
     @include f500;
   }
 
-  &__content{
+  &__content {
     padding: 30px 35px 80px;
   }
 }
 
-.settings__line{
+.settings__line {
   margin-bottom: 21px;
   display: flex;
   align-items: center;
 
-  label{
+  label {
     min-width: 260px;
     color: #444;
   }
 
-  input{
+  input {
     max-width: 540px;
     width: 100%;
     background-color: #f9f9f9;
@@ -2195,19 +2207,19 @@ label{
     padding: 0 10px;
   }
 
-  select{
-     max-width: 100%;
-     background-color: #f9f9f9;
-     height: 38px;
-     border: 1px solid #dedede;
-     padding: 0 10px;
-     color: #707070;
-     font-size: 14px;
-     @include f500;
+  select {
+    max-width: 100%;
+    background-color: #f9f9f9;
+    height: 38px;
+    border: 1px solid #dedede;
+    padding: 0 10px;
+    color: #707070;
+    font-size: 14px;
+    @include f500;
   }
 }
 
-.update-settings{
+.update-settings {
   padding: 15px 20px;
   width: 108px;
   background: $green;
@@ -2258,32 +2270,32 @@ label{
 
 // Profile Page
 
-.profile__inner{
+.profile__inner {
   display: flex;
   margin-bottom: 30px;
 }
 
-.profile__aside{
+.profile__aside {
   margin-right: 30px;
   max-width: 270px;
   width: 100%;
 
-  &.footer__inner-links{
+  &.footer__inner-links {
     margin-bottom: 30px;
   }
 }
 
-.profile__content{
+.profile__content {
   width: 100%;
 }
 
-.profile-status{
+.profile-status {
   color: #707070;
   border: 1px solid #d6d6d6;
   padding: 6px 9px 5px 30px;
   position: relative;
 
-  &::before{
+  &::before {
     content: '';
     position: absolute;
     left: 12px;
@@ -2294,19 +2306,19 @@ label{
   }
 }
 
-.profile-on{
-  &::before{
+.profile-on {
+  &::before {
     background-color: $green;
   }
 }
 
-.profile-off{
-  &::before{
+.profile-off {
+  &::before {
     background-color: $red;
   }
 }
 
-.profile__aside-link{
+.profile__aside-link {
   margin-bottom: 13px;
   text-align: center;
 
@@ -2322,7 +2334,7 @@ label{
     background-color: $text;
     box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
 
-    &::before{
+    &::before {
       content: '\f003';
       position: absolute;
       font-family: 'icomoon';
@@ -2344,21 +2356,21 @@ label{
   }
 }
 
-.profile__banner{
+.profile__banner {
   padding: 20px;
   border: 1px solid #dedede;
   margin-bottom: 35px;
   background-color: #fff;
 }
 
-.profile__banner-images{
+.profile__banner-images {
   min-height: 332px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.profile__items{
+.profile__items {
   display: flex;
   border: 1px solid #dedede;
 
@@ -2369,24 +2381,24 @@ label{
     padding: 20px 5px 17px;
     font-size: 14px;
 
-    &+.profile__item{
+    &+.profile__item {
       border-left: 1px solid #dedede;
     }
 
-    &-title{
+    &-title {
       color: $bg;
       @include f500;
     }
 
-    &-content{
+    &-content {
       color: #707070;
 
-      span{
+      span {
         color: $bg;
         @include f500;
       }
 
-      &.profile__item-sales{
+      &.profile__item-sales {
         color: $bg;
         @include f500;
       }
@@ -2402,11 +2414,11 @@ label{
       color: #707070;
       position: relative;
 
-      &.active::before{
+      &.active::before {
         color: $green;
       }
 
-      &::before{
+      &::before {
         position: absolute;
         left: 27px;
         top: 16px;
@@ -2415,56 +2427,56 @@ label{
         color: #d0d0d0;
       }
     }
-  } 
+  }
 }
 
 
-.personal-box{
+.personal-box {
   background-color: #fff;
   padding: 35px 40px 25px;
   border: 1px solid #dedede;
 
-  &__title{
+  &__title {
     margin-bottom: 25px;
     @include f700;
     color: $bg;
     font-size: 20px;
   }
 
-  &__text{
+  &__text {
     margin-bottom: 20px;
 
-    p{
+    p {
       color: #707070;
     }
   }
 
-  &__item-head{
+  &__item-head {
     display: flex;
     justify-content: space-between;
     margin-bottom: 16px;
   }
 
-  &__item-name{
+  &__item-name {
     @include f500;
     font-size: 16px;
     color: $bg;
     font-style: italic;
   }
 
-  &__item-number{
+  &__item-number {
     @include f700;
     font-size: 16px;
     color: $bg;
   }
 
-  &__item-line{
+  &__item-line {
     background-color: #f4f4f4;
     height: 15px;
     border-radius: 3px;
     margin-bottom: 23px;
 
-    span{
+    span {
       display: block;
       border-radius: 3px;
       height: 15px;
@@ -2476,12 +2488,12 @@ label{
 
 // Upload
 
-.upload__inner{
+.upload__inner {
   background-color: #fff;
   border: 1px solid #d7d7d7;
   margin-bottom: 110px;
 
-  &-title{
+  &-title {
     @include f500;
     font-size: 24px;
     padding: 16px 35px 18px;
@@ -2490,7 +2502,7 @@ label{
     margin-bottom: 40px;
   }
 
-  &-content{
+  &-content {
     margin-bottom: 30px;
     padding-left: 45px;
     padding-right: 50px;
@@ -2509,43 +2521,43 @@ label{
   }
 }
 
-.upload__line{
+.upload__line {
   margin-bottom: 25px;
   display: flex;
 
-  label{
+  label {
     min-width: 170px;
     padding-right: 15px;
     color: #444;
     padding-top: 5px;
 
-    span{
+    span {
       color: $green;
     }
   }
-  
+
   select,
   input,
-  textarea{
+  textarea {
     width: 100%;
     display: block;
     border: 1px solid #d7d7d7;
     height: 40px;
     background-color: #f9f9f9;
     padding: 0 18px;
-    
-    &::placeholder{
+
+    &::placeholder {
       color: #707070;
     }
   }
 
-  textarea{
+  textarea {
     resize: none;
     padding: 8px 18px;
     height: 150px;
   }
 
-  input[type='file']{
+  input[type='file'] {
     outline: none;
   }
 
@@ -2568,7 +2580,7 @@ label{
     box-shadow: none;
     font-size: 12px;
     padding-left: 115px;
-    
+
   }
 
   .jq-file__browse {
@@ -2589,7 +2601,7 @@ label{
     height: 24px;
   }
 
-  .jq-selectbox{
+  .jq-selectbox {
     width: 100%;
   }
 
@@ -2607,22 +2619,22 @@ label{
     text-shadow: none;
   }
 
-  .jq-selectbox__trigger-arrow{
+  .jq-selectbox__trigger-arrow {
     border: none;
     top: 0;
     right: 25px;
     line-height: 40px;
     width: 0;
     font-size: 15px;
-    
-    &::before{
+
+    &::before {
       content: '\f107';
       font-family: 'icomoon';
 
     }
   }
 
-  .jq-selectbox__trigger{
+  .jq-selectbox__trigger {
     border-left: none;
   }
 }
@@ -2630,13 +2642,13 @@ label{
 
 // Withdrawals
 
-.withdrawals__inner{
+.withdrawals__inner {
   display: flex;
   justify-content: space-between;
   margin-bottom: 110px;
 }
 
-.withdrawals__col{
+.withdrawals__col {
   max-width: 570px;
   width: 100%;
   height: 100%;
@@ -2644,7 +2656,7 @@ label{
   border: 1px solid #dedede;
 }
 
-.withdrawals__title{
+.withdrawals__title {
   font-size: 24px;
   padding: 18px 32px 24px;
   border-bottom: 1px solid #dedede;
@@ -2653,7 +2665,7 @@ label{
   @include f500;
 }
 
-.withdrawals__content{
+.withdrawals__content {
   padding-left: 35px;
   padding-right: 40px;
 
@@ -2670,10 +2682,10 @@ label{
   }
 }
 
-.withdrawal__form-line{
+.withdrawal__form-line {
   margin-bottom: 25px;
 
-  label{
+  label {
     display: block;
     width: 100%;
     font-size: 16px;
@@ -2681,13 +2693,13 @@ label{
     margin-bottom: 15px;
     color: $bg;
 
-    span{
+    span {
       color: $green;
     }
   }
 
   input,
-  select{
+  select {
     width: 100%;
     display: block;
     border: 1px solid #d7d7d7;
@@ -2738,13 +2750,13 @@ label{
   }
 }
 
-.withdrawals__content{
-  
-  &-items{
+.withdrawals__content {
+
+  &-items {
     padding-bottom: 35px;
   }
 
-  &-item{
+  &-item {
     display: flex;
     align-items: center;
     padding-left: 25px;
@@ -2752,30 +2764,30 @@ label{
     font-size: 13px;
     color: #444;
 
-    &:nth-child(odd){
+    &:nth-child(odd) {
       background-color: #f9f9f9;
     }
   }
 
-  &-date{
+  &-date {
     @include f500;
     max-width: 140px;
     width: 100%;
   }
 
-  &-mail{
+  &-mail {
     width: 180px;
   }
 
-  &-money{
+  &-money {
     @include f700;
     width: 75px;
   }
 
-  &-status{
+  &-status {
     @include f700;
 
-    &.withdrawals__content-paid{
+    &.withdrawals__content-paid {
       color: $green;
     }
   }
